@@ -1,0 +1,10 @@
+<!--pages/contact/contact.wxml-->
+<view hidden="{{login_success}}">
+  <login_com login_success="{{login_success}}" user_info="{{user_info}}" bind:sync="getlogin"></login_com>
+</view>
+<view hidden="{{!login_success}}">
+  <view class="bar">
+    <image src="{{avatarUrl}}" mode=""/>
+    <text>{{nickName}}</text>
+  </view>
+</view>

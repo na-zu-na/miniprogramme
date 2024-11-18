@@ -1,0 +1,25 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots="true" circular="true" autoplay="true" interval="5000">
+  <swiper-item wx:for="{{piclist}}" wx:key="index" class="swiper_item">
+    <view>{{item}}</view>
+  </swiper-item>
+</swiper>
+
+<view class="note">活动列表</view>
+<view class="act_list">
+  <view class="act_video">
+    <!-- <video src="/images/link-01"/> -->
+    <image src="/images/link-01.png" mode=""/>
+    <view class="act_text">
+      <text>宫廷月亮虾饼</text>
+      <text>任丘市裕华中路与会战北道东南角，蕾莎汇生活4层小吃街</text>
+    </view>
+  </view>
+  <view class="act" wx:for="{{act_pic}}" wx:key="index">
+    <image src="{{item.srcs}}" mode=""/>
+    <view class="act_text">
+      <text>{{item.title}}</text>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>
