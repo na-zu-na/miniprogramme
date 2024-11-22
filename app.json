@@ -1,0 +1,50 @@
+
+{
+  "usingComponents": {
+    "login_com":"/components/login/login",
+    "van-tree-select": "/components/vant-weapp/dist/tree-select/index",
+    "van-card": "/components/vant-weapp/dist/card/index",
+    "van-button": "/components/vant-weapp/dist/button/index",
+    "van-submit-bar": "/components/vant-weapp/dist/submit-bar/index",
+    "communicate":"components/communicate/communicate"
+  },
+
+  "pages": [
+    "pages/home/home",
+    "pages/shop/shop",
+    "pages/contact/contact",
+    "pages/login/login",
+    "pages/gongzhonghao/article/article"
+  ],
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/tabs/mti-home.png",
+      "selectedIconPath": "images/tabs/mti-home-active.png"
+    },
+    {
+      "pagePath": "pages/shop/shop",
+      "text": "商城",
+      "iconPath": "images/tabs/mti-market.png",
+      "selectedIconPath": "images/tabs/mti-market-active.png"
+    },
+    {
+      "pagePath": "pages/contact/contact",
+      "text": "讨论",
+      "iconPath": "images/tabs/mti-contact.png",
+      "selectedIconPath": "images/tabs/mti-contact-active.png"
+    }
+  ]
+  },
+
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
