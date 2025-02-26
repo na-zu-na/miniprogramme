@@ -1,33 +1,43 @@
+
 {
   "usingComponents": {
-    "login_com":"/components/login/login"
+    "login_com":"/components/login/login",
+    "van-tree-select": "/components/vant-weapp/dist/tree-select/index",
+    "van-card": "/components/vant-weapp/dist/card/index",
+    "van-button": "/components/vant-weapp/dist/button/index",
+    "van-submit-bar": "/components/vant-weapp/dist/submit-bar/index",
+    "communicate":"components/communicate/communicate"
   },
 
   "pages": [
     "pages/home/home",
     "pages/shop/shop",
     "pages/contact/contact",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/course/course",
+    "pages/news/news",
+    "pages/orser/orser",
+    "pages/more/more"
   ],
 
   "tabBar": {
     "list": [{
       "pagePath": "pages/home/home",
       "text": "首页",
-      "iconPath": "images/tabs/home.png",
-      "selectedIconPath": "images/tabs/home-active.png"
+      "iconPath": "images/tabs/mti-home.png",
+      "selectedIconPath": "images/tabs/mti-home-active.png"
     },
     {
       "pagePath": "pages/shop/shop",
       "text": "商城",
-      "iconPath": "images/tabs/message.png",
-      "selectedIconPath": "images/tabs/message-active.png"
+      "iconPath": "images/tabs/mti-market.png",
+      "selectedIconPath": "images/tabs/mti-market-active.png"
     },
     {
       "pagePath": "pages/contact/contact",
       "text": "讨论",
-      "iconPath": "images/tabs/contact.png",
-      "selectedIconPath": "images/tabs/contact-active.png"
+      "iconPath": "images/tabs/mti-contact.png",
+      "selectedIconPath": "images/tabs/mti-contact-active.png"
     }
   ]
   },
@@ -37,7 +47,6 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarBackgroundColor": "#ffffff"
   },
-  "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"

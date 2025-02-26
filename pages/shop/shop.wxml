@@ -1,2 +1,47 @@
-<!--pages/shop/shop.wxml-->
-<text>pages/shop/shop.wxml</text>
+<!-- <text class="title">商品列表</text> -->
+
+<view class="shop_container">
+  <van-tree-select class="select"
+    items="{{ items }}"
+    main-active-index="{{ mainActiveIndex }}"
+    active-id="{{ activeId }}"
+    bind:click-nav="onClickNav"
+    bind:click-item="onClickItem"
+  />
+  <view class="shop_item" wx:if="{{ mainActiveIndex===0}}" >
+  <view wx:for="{{shop_item0}}" wx:for-item="item" wx:key="index">
+    <van-card 
+      num='{{item.num}}'
+      price="{{item.price}}"
+      desc="{{item.desc}} "
+      title="{{item.title}}"
+      thumb="{{item.thumb}}"> 
+      <view slot="footer">
+        <van-button size="mini" type="warning" bind:tap="delete" data-price="{{item.price}}" data-num="{{item.num}}" data-index="{{index}}" data-type="0">删除</van-button>
+        <van-button plain size="mini" type="primary" bind:tap="add" data-price="{{item.price}}" data-num="{{item.num}}" data-index="{{index}}" data-type="0">添加</van-button>
+      </view>
+    </van-card>
+    </view>
+  </view>
+  <view class="shop_item" wx:if="{{ mainActiveIndex===1}}" >
+    <view wx:for="{{shop_item1}}" wx:for-item="item" wx:key="index">
+    <van-card 
+      num='{{item.num}}'
+      price="{{item.price}}"
+      desc="{{item.desc}} "
+      title="{{item.title}}"
+      thumb="{{item.thumb}}"> 
+      <view slot="footer">
+        <van-button size="mini" type="warning" bind:tap="delete" data-price="{{item.price}}"  data-num="{{item.num}}" data-index="{{index}}" data-type="1">删除</van-button>
+        <van-button plain size="mini" type="primary" bind:tap="add" data-price="{{item.price}}" data-num="{{item.num}}" data-index="{{index}}" data-type="1">添加</van-button>
+      </view>
+    </van-card>
+    </view>
+  </view>
+</view>
+<van-submit-bar
+  price="{{price*100}}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+/>
+

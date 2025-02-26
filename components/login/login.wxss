@@ -1,11 +1,4 @@
 /* components/login/login.wxss */
-/* page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: aqua;
-} */
 .scrollarea {
   flex: 1;
   overflow-y: hidden;
@@ -29,6 +22,8 @@
 
 .usermotto {
   margin-top: 200px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .avatar-wrapper {
