@@ -1,5 +1,4 @@
 <!--pages/news/news.wxml-->
-<view class="note">活动列表</view>
 <view class="act_list">
   <view class="act" wx:for="{{act_pic}}" wx:key="index">
       <image src="{{item.srcs}}" mode=""/>
