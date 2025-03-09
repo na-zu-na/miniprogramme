@@ -17,7 +17,8 @@
     "pages/course/course",
     "pages/news/news",
     "pages/orser/orser",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/comm/comm"
   ],
 
   "tabBar": {
