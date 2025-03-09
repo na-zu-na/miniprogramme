@@ -1,12 +1,22 @@
-<!-- pages/contact/contact.wxml-->
 <view hidden="{{login_success}}">
   <login_com login_success="{{login_success}}" user_info="{{user_info}}" bind:sync="getlogin"></login_com>
 </view>
-<view wx:if="{{login_success}}">
-  <view class="bar">
-    <image src="{{avatarUrl}}" mode=""/>
-    <text>{{nickName}}</text>
-  </view>
-  <communicate nickName="{{nickName}}" avatarUrl="{{avatarUrl}}"></communicate>
-</view>
 
+<view class="act_list">
+  <view class="act" wx:for="{{act_pic}}" wx:key="index">
+    <navigator url="/pages/comm/comm?nickName={{nickName}}&avatarUrl={{avatarUrl}}&login_success={{login_success}}" open-type="navigate" class="nav">
+      <text class="read">{{item.time}}</text>
+      <view class="main">
+        <image class="act_list_image" src="{{item.srcs}}" mode=""/>
+        <view class="act_text">
+          <text class="title">{{item.title}}</text>
+        </view>
+     </view>
+      <view class="text_add">
+        <text>评论 {{item.comment}}</text>
+        <text>浏览 {{item.read}}</text>
+        
+      </view>
+      </navigator>
+  </view>
+</view>
