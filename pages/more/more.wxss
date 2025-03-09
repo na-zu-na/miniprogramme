@@ -1,28 +1,17 @@
-/* pages/more/more.wxss */
-.note{
-  font-size: 17px;
-  font-weight:bold;
-  line-height: 40px;
-  height: 40px;
-  justify-content: center;
-  background-color: rgb(243, 236, 236);
-  /* background-color: rgb(141, 29, 29); */
-  margin: 5px 0;
-  padding: 0 10px;
-  border-top: 2px solid rgba(255, 255, 255, 0.699);
-  color: gray;
-}
+/* pages/course/course.wxss */
 
 .act_list{
   display: flex;
   flex-direction: column;
   padding: 5px;
-  /* border: dotted 2px rgb(218, 231, 238); */
+  width: 100%;
 }
 
 .act_list image{
-  height: 150rpx;
-  width: 200rpx;
+  height: 300rpx;
+  width: 400rpx;
+  object-fit: contain;
+  margin-top: 5px;
 }
 
 .act_nav{
@@ -30,17 +19,19 @@
 }
 
 .act{
+  margin-top: 5px;
   margin-bottom:10px;
   display: flex;
+  flex-direction: column;
   border-bottom: solid rgb(218, 231, 238) 1px;
   box-shadow: 2px 2px 2px 2px rgb(187, 185, 185);
   height: auto;
+  align-items: center;
 }
 
 .act_text{
   margin-top: 5px;
-  margin-left:10px ;
-  width: 500rpx;
+  padding:0 5px ;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -48,7 +39,15 @@
 }
 
 .title{
-  margin-bottom:5px ;
+  margin:5px 0;
+  font-weight: bold;
+  align-self: center;
+  font-size: large;
+}
+
+.content{
+  font-size: 15px;
+  letter-spacing: 1px; /* 设置字间距为 2 像素 */
 }
 
 
@@ -58,8 +57,4 @@
   justify-content: space-between;
   color: gray;
   font-size: 13px;
-}
-
-.act_text text:nth-child(1){
-  font-weight: bold;
 }
