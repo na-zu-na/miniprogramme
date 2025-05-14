@@ -1,1 +1,40 @@
 /* pages/shop/shop.wxss */
+.select{
+  height: 500px;
+  font-size: 24px;
+}
+
+.shop_container{
+  display: flex;
+  margin: 15px 0px;
+  height: 850px;
+}
+
+/* .shop_container image{
+  width: 400rpx;
+  height:200rpx;
+  z-index: 1000;
+} */
+
+.shop_item{
+  position: absolute;
+  left: 25%;
+  width: 600rpx;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  width: 750rpx;
+  line-height: 55px;
+  font-weight: bold;
+  background-color: rgb(241, 179, 121);
+  box-shadow: 1px 1px 1px 1px rgb(207, 202, 202);
+  color: white;
+  border: white 1px solid;
+}

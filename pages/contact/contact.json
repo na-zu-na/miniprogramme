@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "讨论",
+  "navigationBarBackgroundColor":	"#F4A460",
+  "navigationBarTextStyle": "white"
 }

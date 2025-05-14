@@ -1,0 +1,158 @@
+/* pages/orser/orser.wxss */
+.note{
+  line-height: 45px;
+  height: 50px;
+  align-items: center;
+  /* background-color: rgb(141, 29, 29); */
+  padding: 0 10px;
+  margin-top: 2px;
+  background-color: white;
+  display: flex;
+}
+
+.n1{
+  font-size: 20px;
+  font-weight:bold;
+  margin-right: 15px;
+}
+
+
+.act_list{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  /* border: dotted 2px rgb(218, 231, 238); */
+}
+
+.act_list image {
+  width: 35%;
+  height: 200rpx;
+  border-radius: 8rpx;
+  object-fit: cover;
+}
+
+.image_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.act_nav{
+  display: flex;
+}
+
+.act {
+  margin: 10rpx 0;
+  border-radius: 10rpx;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 10rpx;
+  background-color: white;
+}
+
+.act_text{
+  margin-top: 5px;
+  margin-left:10px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.text_add{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 13px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 8px;
+}
+
+.text_add image{
+  width: 20px;
+  height: 20px;
+}
+
+.text_icon{
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  height: 25px;
+  align-items: center;
+  padding-bottom:6px ;
+}
+
+.content{
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  overflow: hidden;
+  display: -webkit-box;          /* 为了实现行数限制 */
+  -webkit-box-orient: vertical;  /* 垂直排列 */
+  -webkit-line-clamp: 3;         /* 限制为三行 */
+}
+
+.icon_text {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 4px;
+}
+
+.ai {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f8fa;
+  padding-bottom: 70px; /* 留出输入框高度 */
+}
+
+/* 主体内容部分 */
+.ai_main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px 0;
+  box-sizing: border-box;
+}
+
+/* LOGO 样式 */
+.ai_logo image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* 提示语样式 */
+.ai_tip {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 24px;
+}
+.ai_tip view {
+  margin-top: 6px;
+}
+
+/* 底部输入框固定 */
+.ai_search {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 2px 2px;
+  margin-bottom:5px ;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}

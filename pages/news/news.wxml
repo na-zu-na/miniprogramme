@@ -1,0 +1,46 @@
+<!--pages/orser/orser.wxml-->
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="推荐"></van-tab>
+  <van-tab title="AI助手"></van-tab>
+</van-tabs>
+<view class="act_list"  hidden="{{active==1}}">
+  <view class="act" wx:for="{{act_list}}" wx:key="index">
+      <view class="act_text">
+        <text class="title">{{item.title}}</text>
+        <text class="content">{{item.text}}</text>
+        <view class="image_list">
+          <image wx:for="{{item.srcs}}" wx:key="index" src="{{item}}" mode="aspectFill" />
+        </view>
+        <view class="text_add">
+          <text>{{item.time}}</text>
+          <view class="text_icon">
+            <view><image src="/images/icon/comment.png"></image>{{item.comment}}</view>
+            <view><image src="/images/icon/like.png"></image>{{item.like}}</view>
+          </view>
+      </view>
+      </view>
+  </view>
+</view>
+
+
+<view class="ai" hidden="{{active==0}}">
+  <van-notice-bar
+  left-icon="volume-o"
+  text="AI也可能出错请谨慎判断。"
+/>
+<view class="ai_main">
+    <!-- 中部 LOGO -->
+    <view class="ai_logo">
+      <image src="/images/icon/openai.png" mode="aspectFit" />
+    </view>
+    <!-- 提示语句 -->
+    <view class="ai_tip">
+      <text>你可以试试问：</text>
+      <view>“男性健康有什么方法？”</view>
+      <view>“中年人怎么强身健体？”</view>
+    </view>
+  </view>
+
+  <van-search class="ai_search" value="{{ value }}" placeholder="请输入内容" />
+
+</view>

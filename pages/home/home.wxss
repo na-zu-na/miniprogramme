@@ -1,52 +1,109 @@
 /* pages/home/home.wxss */
-.swiper_item{
-  height: 150px;
-  line-height: 150px;
-  text-align: center;
+.swiper_container{
+  height: 180px;
 }
 
-.swiper_item view{
-  background-color: rgb(93, 210, 240);
+.swiper_item image{
+  width: 100%;
+  height: 180px;
 }
 
-.note{
-  font-size: 15px;
-  font-weight:bold;
-  line-height: 40px;
-  height: 40px;
-  background-color: rgb(243, 236, 236);
-  margin: 15px 0;
-  padding: 0 30px;
-  border: 2px solid white;
-  box-shadow: 2px 2px 2px 2px gray;
+/* 按钮区域 */
+.act_button {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  margin: 10px 10px;
 }
 
-.act_list{
+.act_button_img {
   display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border: dotted 2px rgb(218, 231, 238);
-}
-
-.act_list image{
-  height: 150rpx;
-  width: 200rpx;
-}
-
-.act, .act_video{
-  margin-bottom:5px;
-  display: flex;
-  border-bottom: solid rgb(218, 231, 238) 1px;
-  box-shadow: 2px 2px 2px 2px rgb(187, 185, 185);
-}
-
-.act_text{
-  margin-left:10px ;
-  width: 500rpx;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
 }
+
+.but_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  color: #333;
+}
+
+.but_img {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 4px;
+}
+
+/* 标题条 */
+.note {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 44px;
+  background-color: #f9f9f9;
+  padding: 0 15px;
+  color: #666;
+  border-left: 4px solid #2196f3;
+  margin: 15px 0 5px;
+}
+
+/* 活动列表 */
+.act_list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.act {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.act image {
+  width: 120rpx;
+  height: 120rpx;
+  flex-shrink: 0;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.act_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.content {
+  font-size: 13px;
+  color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 18px;
+}
+
+.text_add {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
 .act_text text:nth-child(1){
   font-weight: bold;
 }

@@ -1,0 +1,41 @@
+<view class="cu-list menu menu-avatar comment solids-top">
+    <block wx:for="{{comment_list}}" wx:for-index="index" wx:for-item="clist" wx:key>
+      <view class="cu-item" wx:if="{{clist.reply_id == 0}}"> 
+        <view class="cu-avatar round" style="background-image:url({{clist.comment_user_avatar}});"></view>
+        <view class='content'>
+          <view class='text-grey'>{{clist.comment_user_name }}</view>
+          <view class='text-gray text-content text-df margin-top-xs' bindtap='replyComment' data-name='{{clist.comment_user_name}}' data-cid='{{clist.comment_id}}' data-type="1" data-pid="{{clist.comment_id}}">
+            {{clist.comment_text}}
+          </view>
+          <block wx:for="{{comment_list2}}" wx:key wx:for-index="c2" wx:for-item="clist2"> 
+            <view class='bg-grey text-sm padding-as' wx:if="{{clist2.parent_id==clist.comment_id}}">  
+            
+              <view class="flex" bindtap='replyComment' data-name='{{clist2.comment_user_name}}' data-cid='{{clist2.comment_id}}' data-type="2" data-pid="{{clist2.parent_id}}">
+                <view wx:if="{{clist2.reply_name.length>0}}">{{clist2.comment_user_name}} 回复 {{clist2.reply_name}}：</view>  
+                <block wx:else>
+                  <view>{{clist2.comment_user_name}}：</view>
+                </block>
+                <view class='flex-sub'>{{clist2.comment_text}}</view>
+              </view>
+             
+            </view>
+         </block>
+          <view class='margin-top-sm flex justify-between'>
+            <view class='text-gray text-df'>{{clist.comment_time}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="cu-bar foot input">
+    <view class="cu-avatar round" style="background-image:url({{userinfo.avatarUrl}});"></view>
+    <view class='action'>
+      <text class='icon-roundaddfill text-grey'></text>
+    </view>
+    <input class='solid-bottom' value="{{comment_text}}" placeholder='{{placeholder}}' maxlength="300" cursor-spacing="10" focus="{{focus}}" bindblur="onReplyBlur" bindinput='getCommentText' bind:tap="commentTap"></input>
+    <view class='action'>
+      <text class='icon-emojifill text-grey'></text>
+    </view>
+    <button class='cu-btn bg-green shadow-blur' bindtap='sendComment'>发送</button>
+  </view>

@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    motto: 'Hello World',
+    motto: '嵌艺流光',
     userInfo: {
       avatarUrl: defaultAvatarUrl,
       nickName: '',

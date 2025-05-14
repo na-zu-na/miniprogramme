@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "嵌艺流光",
+  "navigationBarBackgroundColor":	"#F4A460",
+  "navigationBarTextStyle": "white"
 }

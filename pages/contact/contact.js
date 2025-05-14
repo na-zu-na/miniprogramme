@@ -10,15 +10,11 @@ Page({
    avatarUrl:''
   },
   getlogin(e){
-    console.log("getlogin");
     this.setData({
       login_success:e.detail.value.login_success,
       nickName:e.detail.value.nickName,
       avatarUrl:e.detail.value.avatarUrl
     })
-    console.log("login的值为："+e.detail.value.login_success);
-    console.log("名字的值为："+e.detail.value.nickName);
-    console.log("头像的值为："+e.detail.value.avatarUrl);
   },
 
   /**

@@ -1,0 +1,6 @@
+/* components/communicate/communicate.wxss */
+@import "../../app.wxss";
+
+page{
+  padding-bottom: 100rpx;
+}
