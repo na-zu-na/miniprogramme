@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 {
   "usingComponents": {},
   "navigationBarTitleText": "嵌艺流光",
   "navigationBarBackgroundColor":	"#F4A460",
   "navigationBarTextStyle": "white"
+=======
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "嵌艺流光",
+  "navigationBarBackgroundColor":	"#F4A460",
+  "navigationBarTextStyle": "white"
+>>>>>>> a5c4669cb501ab2efdb14c9f89cac1c2b0105714
 }

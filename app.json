@@ -6,11 +6,15 @@
     "van-card": "/components/vant-weapp/dist/card/index",
     "van-button": "/components/vant-weapp/dist/button/index",
     "van-submit-bar": "/components/vant-weapp/dist/submit-bar/index",
+<<<<<<< HEAD
     "communicate":"components/communicate/communicate",
     "van-tab": "/components/vant-weapp/dist/tab/index",
     "van-tabs": "/components/vant-weapp/dist/tabs/index",
     "van-search": "/components/vant-weapp/dist/search/index",
     "van-notice-bar": "/components/vant-weapp/dist/notice-bar/index"
+=======
+    "communicate":"components/communicate/communicate"
+>>>>>>> a5c4669cb501ab2efdb14c9f89cac1c2b0105714
   },
 
   "pages": [
@@ -21,7 +25,12 @@
     "pages/course/course",
     "pages/news/news",
     "pages/orser/orser",
+<<<<<<< HEAD
     "pages/more/more"
+=======
+    "pages/more/more",
+    "pages/comm/comm"
+>>>>>>> a5c4669cb501ab2efdb14c9f89cac1c2b0105714
   ],
 
   "tabBar": {

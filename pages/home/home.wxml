@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--pages/home/home.wxml-->
 <swiper indicator-dots="true" circular="true" autoplay="true" interval="5000" class="swiper_container">
   <swiper-item wx:for="{{piclist}}" wx:key="index" class="swiper_item">
@@ -50,3 +51,57 @@
       </navigator>
   </view>
 </view>
+=======
+<!--pages/home/home.wxml-->
+<swiper indicator-dots="true" circular="true" autoplay="true" interval="5000" class="swiper_container">
+  <swiper-item wx:for="{{piclist}}" wx:key="index" class="swiper_item">
+    <image src="{{item}}" mode=""/>
+  </swiper-item>
+</swiper>
+
+<view class="act_button">
+  <view class="act_button_img">
+    <navigator url="/pages/course/course" open-type="navigate">
+    <view class="but_content">
+      <image class="but_img" src="/images/tabs/order.png" mode=""/>
+      <text>官方课程</text>
+    </view>
+    </navigator>
+    <navigator url="/pages/news/news" open-type="navigate">
+    <view class="but_content">
+      <image class="but_img" src="/images/tabs/live.png" mode=""/>
+      <text>新闻直达</text>
+    </view>
+    </navigator>
+    <navigator url="/pages/orser/orser" open-type="navigate">
+    <view class="but_content">
+      <image class="but_img" src="/images/tabs/product.png" mode=""/>
+      <text>个性化定制</text>
+    </view>
+    </navigator>
+    <navigator url="/pages/more/more" open-type="navigate">
+    <view class="but_content">
+      <image class="but_img" src="/images/tabs/gallery.png" mode=""/>
+      <text>更多</text>
+    </view>
+    </navigator>
+  </view>
+</view>
+
+<view class="note">活动列表</view>
+<view class="act_list">
+  <view class="act" wx:for="{{act_pic}}" wx:key="index">
+      <image src="{{item.srcs}}" mode=""/>
+      <navigator url="{{item.url}}" open-type="navigate">
+      <view class="act_text">
+        <text class="title">{{item.title}}</text>
+        <text class="content">{{item.text}}</text>
+      <view class="text_add">
+        <text >{{item.category}}</text>
+        <text>{{item.time}}</text>
+      </view>
+      </view>
+      </navigator>
+  </view>
+</view>
+>>>>>>> a5c4669cb501ab2efdb14c9f89cac1c2b0105714

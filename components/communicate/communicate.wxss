@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 /* components/communicate/communicate.wxss */
 @import "../../app.wxss";
 
 page{
   padding-bottom: 100rpx;
+=======
+/* components/communicate/communicate.wxss */
+@import "../../app.wxss";
+
+page{
+  padding-bottom: 100rpx;
+>>>>>>> a5c4669cb501ab2efdb14c9f89cac1c2b0105714
 }

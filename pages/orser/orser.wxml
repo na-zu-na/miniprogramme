@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--pages/orser/orser.wxml-->
 <van-tabs active="{{ active }}" bind:change="onChange">
   <van-tab title="推荐"></van-tab>
@@ -41,4 +42,19 @@
     </view>
   </view>
   <van-search class="ai_search" value="{{ value }}" placeholder="请输入内容" />
+=======
+<!--pages/orser/orser.wxml-->
+<view class="act_list">
+  <view class="act" wx:for="{{act_pic}}" wx:key="index">
+      <image src="{{item.srcs}}" mode=""/>
+      <view class="act_text">
+        <text class="title">{{item.title}}</text>
+        <text class="content">{{item.text}}</text>
+      <view class="text_add">
+        <text >{{item.category}}</text>
+        <text>{{item.time}}</text>
+      </view>
+      </view>
+  </view>
+>>>>>>> a5c4669cb501ab2efdb14c9f89cac1c2b0105714
 </view>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* components/login/login.wxss */
 .scrollarea {
   flex: 1;
@@ -74,4 +75,82 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+=======
+/* components/login/login.wxss */
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  width: 80%;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.nickname-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-top: .5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.nickname-label {
+  width: 105px;
+}
+
+.nickname-input {
+  flex: 1;
+}
+
+.jump_button{
+  margin: 40px;
+}
+
+.userinfo-nickname{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+>>>>>>> a5c4669cb501ab2efdb14c9f89cac1c2b0105714
 }

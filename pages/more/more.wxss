@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* pages/more/more.wxss */
 .note{
   font-size: 17px;
@@ -62,4 +63,65 @@
 
 .act_text text:nth-child(1){
   font-weight: bold;
+=======
+/* pages/course/course.wxss */
+
+.act_list{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+}
+
+.act_list image{
+  height: 300rpx;
+  width: 400rpx;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.act_nav{
+  display: flex;
+}
+
+.act{
+  margin-top: 5px;
+  margin-bottom:10px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid rgb(218, 231, 238) 1px;
+  box-shadow: 2px 2px 2px 2px rgb(187, 185, 185);
+  height: auto;
+  align-items: center;
+}
+
+.act_text{
+  margin-top: 5px;
+  padding:0 5px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+}
+
+.title{
+  margin:5px 0;
+  font-weight: bold;
+  align-self: center;
+  font-size: large;
+}
+
+.content{
+  font-size: 15px;
+  letter-spacing: 1px; /* 设置字间距为 2 像素 */
+}
+
+
+.text_add{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 13px;
+>>>>>>> a5c4669cb501ab2efdb14c9f89cac1c2b0105714
 }
